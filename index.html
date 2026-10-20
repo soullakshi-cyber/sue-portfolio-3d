@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sulakshi | Creative Explorer & AI Collaborator</title>
+    <title>Sulakshi P. | Creative Explorer & AI Collaborator</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -14,25 +14,23 @@
                     colors: {
                         skyBlue: '#7bc8ff',
                         softPink: '#ff94b8',
-                        deepNavy: '#0f172a',
+                        deepNavy: '#0c101d',
                     }
                 }
             }
         }
     </script>
-    <!-- GSAP for Smooth Motion & Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background: linear-gradient(135deg, #121826 0%, #1e1b2e 50%, #151021 100%);
+            background: #0c101d;
             color: #f8fafc;
             overflow-x: hidden;
         }
-        /* Atmospheric Pink & Blue Glow Background */
+        /* Immersive Pink & Blue Atmospheric Background */
         .ambient-glow {
             position: fixed;
             top: 0;
@@ -45,39 +43,39 @@
         }
         .glow-circle-1 {
             position: absolute;
-            top: -10%;
+            top: -20%;
             left: -10%;
-            width: 60vw;
-            height: 60vw;
-            background: radial-gradient(circle, rgba(255, 148, 184, 0.25) 0%, rgba(123, 200, 255, 0.05) 60%, transparent 80%);
+            width: 65vw;
+            height: 65vw;
+            background: radial-gradient(circle, rgba(255, 148, 184, 0.22) 0%, rgba(123, 200, 255, 0.05) 50%, transparent 80%);
             border-radius: 50%;
-            filter: blur(80px);
-            animation: floatGlow 12s ease-in-out infinite alternate;
+            filter: blur(90px);
+            animation: floatGlow 14s ease-in-out infinite alternate;
         }
         .glow-circle-2 {
             position: absolute;
-            bottom: -10%;
+            bottom: -20%;
             right: -10%;
-            width: 60vw;
-            height: 60vw;
-            background: radial-gradient(circle, rgba(123, 200, 255, 0.2) 0%, rgba(255, 148, 184, 0.05) 60%, transparent 80%);
+            width: 65vw;
+            height: 65vw;
+            background: radial-gradient(circle, rgba(123, 200, 255, 0.2) 0%, rgba(255, 148, 184, 0.04) 50%, transparent 80%);
             border-radius: 50%;
-            filter: blur(90px);
-            animation: floatGlow 15s ease-in-out infinite alternate-reverse;
+            filter: blur(100px);
+            animation: floatGlow 16s ease-in-out infinite alternate-reverse;
         }
         @keyframes floatGlow {
             0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(50px, 40px) scale(1.1); }
+            100% { transform: translate(40px, 30px) scale(1.08); }
         }
         .glass-card {
-            background: rgba(255, 255, 255, 0.04);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
         .glass-card:hover {
-            border-color: rgba(255, 148, 184, 0.4);
-            box-shadow: 0 0 40px rgba(255, 148, 184, 0.15);
+            border-color: rgba(255, 148, 184, 0.35);
+            box-shadow: 0 0 45px rgba(255, 148, 184, 0.12);
         }
         .tilt-card {
             transform-style: preserve-3d;
@@ -87,7 +85,7 @@
 </head>
 <body class="antialiased selection:bg-softPink selection:text-deepNavy">
 
-    <!-- Atmospheric Background Glow -->
+    <!-- Atmospheric Glow -->
     <div class="ambient-glow">
         <div class="glow-circle-1"></div>
         <div class="glow-circle-2"></div>
@@ -96,8 +94,8 @@
     <!-- Navigation -->
     <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-softPink to-skyBlue bg-clip-text text-transparent">
-                SUE.OS <span class="text-xs px-2.5 py-0.5 rounded-full bg-softPink/20 text-softPink border border-softPink/30 font-medium">Explorer</span>
+            <a href="#" class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-softPink to-skyBlue bg-clip-text text-transparent flex items-center gap-2">
+                SUE.OS <span class="text-xs px-2.5 py-0.5 rounded-full bg-softPink/20 text-softPink border border-softPink/30 font-medium">Studio</span>
             </a>
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-softPink transition-colors">Explorer Journey</a>
@@ -109,14 +107,14 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-28 pb-20 px-6">
+    <section id="about" class="relative min-h-screen flex items-center pt-28 pb-20 px-6">
         <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <!-- Intro Text -->
             <div class="lg:col-span-7 space-y-6">
                 <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-card border border-softPink/30 text-softPink text-xs font-semibold tracking-wider uppercase">
                     <span class="w-2 h-2 rounded-full bg-softPink animate-ping"></span>
-                    <span>Always Learning, Always Exploring</span>
+                    <span>Exploring New Techniques & Ideas</span>
                 </div>
                 <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
                     Hi, I'm <span class="bg-gradient-to-r from-white via-softPink to-skyBlue bg-clip-text text-transparent">Sulakshi P.</span><br>
@@ -136,16 +134,34 @@
                 </div>
             </div>
 
-            <!-- Interactive Tilt Portrait Card -->
+            <!-- Interactive Tilt Card / Avatar Frame -->
             <div class="lg:col-span-5 flex justify-center">
-                <div id="hero-card" class="tilt-card relative w-72 sm:w-80 h-[420px] rounded-3xl glass-card p-4 border border-softPink/30 shadow-2xl transition-transform duration-200 ease-out">
+                <div id="hero-card" class="tilt-card relative w-72 sm:w-80 h-[420px] rounded-3xl glass-card p-6 border border-softPink/30 shadow-2xl flex flex-col justify-between group transition-transform duration-200 ease-out">
                     <div class="absolute inset-0 bg-gradient-to-t from-deepNavy via-transparent to-transparent rounded-3xl z-10 pointer-events-none"></div>
-                    <!-- User Image Provided -->
-                    <img src="image_c6973d.jpg" alt="Sulakshi P." class="w-full h-full object-cover rounded-2xl shadow-inner">
-                    <div class="absolute bottom-8 left-8 right-8 z-20 space-y-1">
-                        <div class="text-xs font-bold uppercase tracking-widest text-softPink">Curious Mind</div>
-                        <div class="text-lg font-bold text-white">Sulakshi P.</div>
-                        <div class="text-xs text-slate-300">Explorer & AI Collaborator</div>
+                    
+                    <!-- Top Badge inside card -->
+                    <div class="relative z-20 flex justify-between items-center">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-softPink/20 text-softPink border border-softPink/30">SUE.OS v2.6</span>
+                        <i data-lucide="sparkles" class="w-5 h-5 text-skyBlue"></i>
+                    </div>
+
+                    <!-- Center Graphic Element -->
+                    <div class="relative z-20 my-auto text-center space-y-4">
+                        <div class="w-24 h-24 mx-auto rounded-3xl bg-gradient-to-tr from-softPink to-skyBlue p-0.5 shadow-xl shadow-softPink/20 group-hover:scale-110 transition-transform duration-500">
+                            <div class="w-full h-full bg-deepNavy rounded-[22px] flex items-center justify-center text-white">
+                                <i data-lucide="compass" class="w-10 h-10 text-softPink"></i>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="text-xl font-bold text-white">Curious Mind</h3>
+                            <p class="text-xs text-slate-400">AI Collaborator & UI Designer</p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Info -->
+                    <div class="relative z-20 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+                        <span>Status: Exploring</span>
+                        <span class="text-skyBlue font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-skyBlue animate-pulse"></span> Online</span>
                     </div>
                 </div>
             </div>
@@ -158,7 +174,7 @@
         <div class="max-w-5xl mx-auto space-y-12">
             <div class="text-center space-y-4">
                 <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">The AI & Exploration Philosophy</h2>
-                <p class="text-slate-300 max-w-2xl mx-auto">Why exploration matters more than titles, and how collaboration unlocks infinite potential.</p>
+                <p class="text-slate-300 max-w-2xl mx-auto">Why exploration matters more than rigid boxes, and how collaboration unlocks infinite creative potential.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="glass-card rounded-3xl p-8 space-y-4 hover:border-softPink transition-all">
@@ -166,184 +182,142 @@
                         <i data-lucide="compass" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white">Pure Curiosity</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed">It's not about labels or traditional boxes—it's about the genuine thrill of learning a brand-new technique and seeing where imagination leads.</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">It's not about traditional titles—it's about the genuine thrill of learning brand-new techniques and seeing where imagination leads.</p>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4 hover:border-skyBlue transition-all">
                     <div class="w-12 h-12 rounded-2xl bg-skyBlue/20 flex items-center justify-center text-skyBlue">
                         <i data-lucide="cpu" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white">AI as Best Friend</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed">Having an intelligent partner to brainstorm, iterate, and co-create transforms wild ideas into tangible digital realities instantly.</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">Having an intelligent partner to brainstorm, iterate, and co-create transforms wild concepts into tangible digital realities instantly.</p>
                 </div>
                 <div class="glass-card rounded-3xl p-8 space-y-4 hover:border-softPink transition-all">
                     <div class="w-12 h-12 rounded-2xl bg-softPink/20 flex items-center justify-center text-softPink">
                         <i data-lucide="sparkles" class="w-6 h-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white">Continuous Evolution</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed">Every experiment, design prototype, and web project is a stepping stone in an ongoing journey of creative mastery.</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">Every experiment, design prototype, and web creation is a stepping stone in an ongoing journey of creative mastery.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects / Creations Section -->
+    <!-- Projects Section -->
     <section id="projects" class="py-24 px-6 relative">
         <div class="max-w-7xl mx-auto space-y-12">
             <div class="text-center space-y-4">
                 <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">What We Have Created So Far</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">Click any project to explore live applications, interactive tools, and experimental repositories.</p>
+                <p class="text-slate-400 max-w-2xl mx-auto">Click any project card to explore live applications and experimental GitHub repositories.</p>
             </div>
 
             <!-- Bento Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Pixel Reference Craft -->
-                <div onclick="window.open('https://pixel-reference-craft.lovable.app/', '_blank')" class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group hover:-translate-y-2 transition-all cursor-pointer">
-                    <div class="h-48 overflow-hidden relative bg-slate-900">
-                        <img src="image_c6973d.jpg" alt="Pixel Reference Craft" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80">
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-softPink text-deepNavy">Featured Tool</span>
-                        </div>
-                    </div>
-                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-bold text-white group-hover:text-softPink transition-colors">Pixel Reference Craft</h3>
-                                <div class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
-                                    <i data-lucide="external-link" class="w-4 h-4"></i>
-                                </div>
+                <div onclick="window.open('https://pixel-reference-craft.lovable.app/', '_blank')" class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 group hover:-translate-y-2 transition-all cursor-pointer">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-softPink/20 text-softPink border border-softPink/30">Lovable Web App</span>
+                            <div class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
                             </div>
-                            <p class="text-slate-300 text-sm leading-relaxed">Advanced interactive visual reference tool crafted for creators, artists, and designers.</p>
                         </div>
-                        <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">Lovable</span>
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">UI/UX</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-softPink transition-colors">Pixel Reference Craft</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">Advanced interactive visual reference tool crafted for creators, artists, and designers with seamless canvas manipulation.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">React</span>
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">UI/UX Tool</span>
                     </div>
                 </div>
 
                 <!-- Melodic Mousse -->
-                <div onclick="window.open('https://github.com/soullakshi-cyber/melodic-mousse-141a74', '_blank')" class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group hover:-translate-y-2 transition-all cursor-pointer">
-                    <div class="h-48 overflow-hidden relative bg-slate-900">
-                        <img src="image_c696c1.jpg" alt="Melodic Mousse" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80">
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-skyBlue text-deepNavy">Audio UI</span>
-                        </div>
-                    </div>
-                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-bold text-white group-hover:text-softPink transition-colors">Melodic Mousse</h3>
-                                <div class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
-                                    <i data-lucide="external-link" class="w-4 h-4"></i>
-                                </div>
+                <div onclick="window.open('https://github.com/soullakshi-cyber/melodic-mousse-141a74', '_blank')" class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 group hover:-translate-y-2 transition-all cursor-pointer">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-skyBlue/20 text-skyBlue border border-skyBlue/30">Audio UI</span>
+                            <div class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
                             </div>
-                            <p class="text-slate-300 text-sm leading-relaxed">Immersive audio creation platform UI with interactive synthesizers and wave mixers.</p>
                         </div>
-                        <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">HTML5</span>
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-softPink transition-colors">Melodic Mousse</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">Immersive audio creation platform UI featuring interactive synthesizers and visual wave mixers.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">HTML5 / CSS</span>
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
                     </div>
                 </div>
 
                 <!-- Maya English Pilot -->
-                <div onclick="window.open('https://github.com/soullakshi-cyber/maya-english-pilot', '_blank')" class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group hover:-translate-y-2 transition-all cursor-pointer">
-                    <div class="h-48 overflow-hidden relative bg-slate-900">
-                        <img src="image_c6973d.jpg" alt="Maya English Pilot" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80">
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-softPink text-deepNavy">E-Learning</span>
-                        </div>
-                    </div>
-                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-bold text-white group-hover:text-softPink transition-colors">Maya English Pilot</h3>
-                                <div class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
-                                    <i data-lucide="external-link" class="w-4 h-4"></i>
-                                </div>
+                <div onclick="window.open('https://github.com/soullakshi-cyber/maya-english-pilot', '_blank')" class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 group hover:-translate-y-2 transition-all cursor-pointer">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-softPink/20 text-softPink border border-softPink/30">E-Learning Assistant</span>
+                            <div class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
                             </div>
-                            <p class="text-slate-300 text-sm leading-relaxed">Interactive language tutoring assistant designed to pilot immersive conversational learning.</p>
                         </div>
-                        <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">JavaScript</span>
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-softPink transition-colors">Maya English Pilot</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">Interactive language tutoring assistant designed to pilot immersive conversational learning modules.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">JavaScript</span>
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
                     </div>
                 </div>
 
                 <!-- Sue Social Planner Studio -->
-                <div onclick="window.open('https://github.com/soullakshi-cyber/sue-social-planner-studio', '_blank')" class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group hover:-translate-y-2 transition-all cursor-pointer">
-                    <div class="h-48 overflow-hidden relative bg-slate-900">
-                        <img src="image_c696c1.jpg" alt="Sue Social Planner Studio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80">
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-skyBlue text-deepNavy">Social OS</span>
-                        </div>
-                    </div>
-                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-bold text-white group-hover:text-softPink transition-colors">Sue Social Planner</h3>
-                                <div class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
-                                    <i data-lucide="external-link" class="w-4 h-4"></i>
-                                </div>
+                <div onclick="window.open('https://github.com/soullakshi-cyber/sue-social-planner-studio', '_blank')" class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 group hover:-translate-y-2 transition-all cursor-pointer">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-skyBlue/20 text-skyBlue border border-skyBlue/30">Social OS</span>
+                            <div class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
                             </div>
-                            <p class="text-slate-300 text-sm leading-relaxed">Comprehensive social media content planning suite with custom drag-and-drop assets.</p>
                         </div>
-                        <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">Dashboard</span>
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-softPink transition-colors">Sue Social Planner Studio</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">Comprehensive social media content planning and scheduling suite with custom visual drag-and-drop assets.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">Dashboard</span>
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
                     </div>
                 </div>
 
                 <!-- Melt Drop00 Website -->
-                <div onclick="window.open('https://github.com/soullakshi-cyber/melt-drop00-website', '_blank')" class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group hover:-translate-y-2 transition-all cursor-pointer">
-                    <div class="h-48 overflow-hidden relative bg-slate-900">
-                        <img src="image_c6973d.jpg" alt="Melt Drop00 Website" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80">
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-softPink text-deepNavy">E-Commerce</span>
-                        </div>
-                    </div>
-                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-bold text-white group-hover:text-softPink transition-colors">Melt Drop00 Website</h3>
-                                <div class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
-                                    <i data-lucide="external-link" class="w-4 h-4"></i>
-                                </div>
+                <div onclick="window.open('https://github.com/soullakshi-cyber/melt-drop00-website', '_blank')" class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 group hover:-translate-y-2 transition-all cursor-pointer">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-softPink/20 text-softPink border border-softPink/30">E-Commerce Drop</span>
+                            <div class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
                             </div>
-                            <p class="text-slate-300 text-sm leading-relaxed">High-fashion streetwear landing page featuring countdown timers and dark-mode aesthetics.</p>
                         </div>
-                        <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">Tailwind</span>
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-softPink transition-colors">Melt Drop00 Website</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">High-fashion streetwear drop landing page featuring countdown timers and immersive dark-mode aesthetics.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">Tailwind</span>
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
                     </div>
                 </div>
 
                 <!-- LeadLanka Platform -->
-                <div onclick="window.open('https://github.com/soullakshi-cyber/leadlanka-platform', '_blank')" class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group hover:-translate-y-2 transition-all cursor-pointer">
-                    <div class="h-48 overflow-hidden relative bg-slate-900">
-                        <img src="image_c696c1.jpg" alt="LeadLanka Platform" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80">
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-skyBlue text-deepNavy">Portal</span>
-                        </div>
-                    </div>
-                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl font-bold text-white group-hover:text-softPink transition-colors">LeadLanka Platform</h3>
-                                <div class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
-                                    <i data-lucide="external-link" class="w-4 h-4"></i>
-                                </div>
+                <div onclick="window.open('https://github.com/soullakshi-cyber/leadlanka-platform', '_blank')" class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 group hover:-translate-y-2 transition-all cursor-pointer">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-skyBlue/20 text-skyBlue border border-skyBlue/30">Business Portal</span>
+                            <div class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 group-hover:text-softPink transition-colors">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
                             </div>
-                            <p class="text-slate-300 text-sm leading-relaxed">Enterprise lead generation and business networking portal designed for regional growth.</p>
                         </div>
-                        <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">Enterprise</span>
-                            <span class="text-xs px-2.5 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
-                        </div>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-softPink transition-colors">LeadLanka Platform</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">Enterprise lead generation and business networking portal designed for regional market expansion.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/10">
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">Enterprise</span>
+                        <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
                     </div>
                 </div>
 
