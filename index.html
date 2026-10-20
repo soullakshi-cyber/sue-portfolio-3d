@@ -30,7 +30,6 @@
             color: #f8fafc;
             overflow-x: hidden;
         }
-        /* Immersive Pink & Blue Atmospheric Background */
         .ambient-glow {
             position: fixed;
             top: 0;
@@ -110,7 +109,6 @@
     <section id="about" class="relative min-h-screen flex items-center pt-28 pb-20 px-6">
         <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            <!-- Intro Text -->
             <div class="lg:col-span-7 space-y-6">
                 <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full glass-card border border-softPink/30 text-softPink text-xs font-semibold tracking-wider uppercase">
                     <span class="w-2 h-2 rounded-full bg-softPink animate-ping"></span>
@@ -134,34 +132,21 @@
                 </div>
             </div>
 
-            <!-- Interactive Tilt Card / Avatar Frame -->
+            <!-- Interactive Tilt Portrait Card -->
             <div class="lg:col-span-5 flex justify-center">
-                <div id="hero-card" class="tilt-card relative w-72 sm:w-80 h-[420px] rounded-3xl glass-card p-6 border border-softPink/30 shadow-2xl flex flex-col justify-between group transition-transform duration-200 ease-out">
-                    <div class="absolute inset-0 bg-gradient-to-t from-deepNavy via-transparent to-transparent rounded-3xl z-10 pointer-events-none"></div>
+                <div id="hero-card" class="tilt-card relative w-72 sm:w-80 h-[420px] rounded-3xl glass-card p-3 border border-softPink/30 shadow-2xl flex flex-col justify-between group transition-transform duration-200 ease-out overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-deepNavy via-transparent to-transparent rounded-3xl z-10 pointer-events-none opacity-60"></div>
                     
-                    <!-- Top Badge inside card -->
-                    <div class="relative z-20 flex justify-between items-center">
-                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-softPink/20 text-softPink border border-softPink/30">SUE.OS v2.6</span>
-                        <i data-lucide="sparkles" class="w-5 h-5 text-skyBlue"></i>
+                    <!-- Portrait Image Inserted -->
+                    <img src="image_c79621.jpg" alt="Sulakshi P." class="absolute inset-0 w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700">
+
+                    <div class="relative z-20 flex justify-between items-center p-3">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-deepNavy/80 backdrop-blur-md text-softPink border border-softPink/30">SUE.OS Explorer</span>
                     </div>
 
-                    <!-- Center Graphic Element -->
-                    <div class="relative z-20 my-auto text-center space-y-4">
-                        <div class="w-24 h-24 mx-auto rounded-3xl bg-gradient-to-tr from-softPink to-skyBlue p-0.5 shadow-xl shadow-softPink/20 group-hover:scale-110 transition-transform duration-500">
-                            <div class="w-full h-full bg-deepNavy rounded-[22px] flex items-center justify-center text-white">
-                                <i data-lucide="compass" class="w-10 h-10 text-softPink"></i>
-                            </div>
-                        </div>
-                        <div class="space-y-1">
-                            <h3 class="text-xl font-bold text-white">Curious Mind</h3>
-                            <p class="text-xs text-slate-400">AI Collaborator & UI Designer</p>
-                        </div>
-                    </div>
-
-                    <!-- Bottom Info -->
-                    <div class="relative z-20 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
-                        <span>Status: Exploring</span>
-                        <span class="text-skyBlue font-semibold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-skyBlue animate-pulse"></span> Online</span>
+                    <div class="relative z-20 p-4 bg-gradient-to-t from-deepNavy/90 via-deepNavy/40 to-transparent rounded-b-2xl mt-auto">
+                        <h3 class="text-lg font-bold text-white">Sulakshi P.</h3>
+                        <p class="text-xs text-slate-300">Creator & AI Collaborator</p>
                     </div>
                 </div>
             </div>
@@ -210,9 +195,7 @@
                 <p class="text-slate-400 max-w-2xl mx-auto">Click any project card to explore live applications and experimental GitHub repositories.</p>
             </div>
 
-            <!-- Bento Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
                 <!-- Pixel Reference Craft -->
                 <div onclick="window.open('https://pixel-reference-craft.lovable.app/', '_blank')" class="glass-card rounded-3xl p-8 flex flex-col justify-between space-y-6 group hover:-translate-y-2 transition-all cursor-pointer">
                     <div class="space-y-4">
@@ -320,7 +303,6 @@
                         <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-skyBlue font-medium">GitHub Repo</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -352,7 +334,6 @@
     <script>
         lucide.createIcons();
 
-        // Smooth Card Tilt & Mouse Tracking Motion
         const heroCard = document.getElementById('hero-card');
         document.addEventListener('mousemove', (e) => {
             const rect = heroCard.getBoundingClientRect();
